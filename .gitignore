@@ -1,0 +1,23 @@
+# Ignore these files
+*.iml
+*.ipr
+*.iws
+.idea/
+target/
+.settings
+.project
+.classpath
+/logs
+/oxalis-dist/oxalis-standalone/*.dat
+/*-mdn.txt
+/*-rem-evidence.xml
+/*.receipt.dat
+/docker-compose.yml
+
+rebel.xml
+/data
+/conf
+/inbound
+/outbound
+dev.make
+/dist
