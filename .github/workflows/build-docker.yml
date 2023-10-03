@@ -8,7 +8,7 @@ env:
   DOCKERFILE_PATH: './Dockerfile'
   
 permissions:
-  packages: write # Needed to publish to Github Container Registry
+  packages: write # Needed to publish to Github Container Registry's
   contents: read
 
 
