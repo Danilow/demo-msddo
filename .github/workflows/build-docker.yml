@@ -4,12 +4,12 @@ on: [push]
 
 env:
   REGISTRY: 'ghcr.io'
-  IMAGE_NAME: 'danilow/demo-msddo'
+  IMAGE_NAME: 'danilow/msddo-demo'
   DOCKERFILE_PATH: './Dockerfile'
   
 permissions:
-  packages: write # Needed to publish to Github Container Registry's
-  contents: read
+  packages: 'write' # Needed to publish to Github Container Registry's
+  contents: 'read'
 
 
 jobs:
