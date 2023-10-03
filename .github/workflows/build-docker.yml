@@ -1,6 +1,10 @@
 name: Test, Build and Publish to Github Container Registry
 
-on: [push]
+on:
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - main
 
 env:
   REGISTRY: 'ghcr.io'
