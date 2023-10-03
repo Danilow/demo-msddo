@@ -3,8 +3,8 @@ name: 'Trivy Scan (mode: filesystem)'
 on: [push]
 
 env:
-  GDN_RUN_GITHUB: 'true'
-  GDN_RUN_LOGGERACTIONS: 'true'
+  GDN_RUN_GITHUB: 'true' # When outputting a SARIF file, make the SARIF compliant with GitHub's code scanning requirements
+  GDN_RUN_LOGGERACTIONS: 'true' # to enable logging in Github actions format.
   
 permissions:
   packages: 'write' # Needed to publish to Github Container Registry's
