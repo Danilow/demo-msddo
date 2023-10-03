@@ -7,8 +7,7 @@ env:
   GDN_RUN_LOGGERACTIONS: 'true' # to enable logging in Github actions format.
   
 permissions:
-  packages: 'write' # Needed to publish to Github Container Registry's
-  contents: 'read'
+  security-events: 'write' # Needed to run MSDDO
 jobs:
 
     MSDO:
