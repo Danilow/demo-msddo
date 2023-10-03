@@ -1,0 +1,29 @@
+{
+  "fileVersion": "1.0.1",
+  "jobs": [],
+  "commands": [],
+  "tools": [
+    {
+      "fileVersion": "1.0.1",
+      "tool": {
+        "name": "trivy",
+        "version": "0.45.0"
+      },
+      "arguments": {
+        "Action": "filesystem",
+        "Target": ".",
+        "ExitCode": 100,
+        "TableFormat": "sarif"
+      },
+      "outputExtension": "sarif",
+      "successfulExitCodes": [
+        0,
+        100
+      ],
+      "errorExitCodes": {
+        "1": "The tool did not complete successfully due to bad parameters or a scan error. Contact TrivySecSupport for assistance."
+      },
+      "outputPaths": []
+    }
+  ]
+}
