@@ -3,6 +3,7 @@ name: 'Microsoft Defender for DevOps'
 on:
   push:
     branches: 
+      - '**' # Do run on push to any branch
       - '!main' # Do not run on push to main branch
   pull_request:
     branches: 
