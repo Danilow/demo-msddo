@@ -1,0 +1,38 @@
+{
+  "fileVersion": "1.4",
+  "jobs": [],
+  "commands": [],
+  "tools": [
+    {
+      "fileVersion": "1.4",
+      "tool": {
+        "name": "credscan",
+        "version": "2.5.1.13"
+      },
+      "arguments": {
+        "OutputType": "sarif",
+        "TargetDirectory": "$(Credscan.DefaultTargetDirectory)",
+        "SuppressAsError": true
+      },
+      "outputExtension": "xml",
+      "successfulExitCodes": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "errorExitCodes": {
+        "1": "Partial scan completed with warnings.",
+        "3": "Partial scan completed with credential matches and warnings.",
+        "5": "Partial scan completed with application warnings and credential matches",
+        "7": "Partial scan completed with application warnings, suppressed warnings, and credential matches",
+        "-1000": "Argument Exception.",
+        "-1100": "Invalid configuration.",
+        "-1500": "Configuration Exception.",
+        "-1600": "IO Exception.",
+        "-9000": "Unexpected Exception."
+      },
+      "outputPaths": []
+    }
+  ]
+}
